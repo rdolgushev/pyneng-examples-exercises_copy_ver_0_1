@@ -9,3 +9,6 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+mac_edited = mac.replace(':', '.')
+
+print(mac_edited)
