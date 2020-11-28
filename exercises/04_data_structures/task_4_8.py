@@ -20,3 +20,12 @@
 """
 
 ip = "192.168.3.1"
+ip_list = ip.split('.')
+
+oct_a = int(ip_list[0])
+oct_b = int(ip_list[1])
+oct_c = int(ip_list[2])
+oct_d = int(ip_list[3])
+
+print(f'{ip_list[0]:10}{ip_list[1]:10}{ip_list[2]:10}{ip_list[3]:10}')
+print(f'{oct_a:8b}  {oct_b:8b}  {oct_c:08b}  {oct_d:08b}')

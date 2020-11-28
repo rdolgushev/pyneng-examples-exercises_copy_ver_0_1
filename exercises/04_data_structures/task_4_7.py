@@ -10,3 +10,10 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+mac_list = mac.split(':')
+
+mac_bin_a = bin(int((mac_list[0]), 16))[2:]
+mac_bin_b = bin(int((mac_list[1]), 16))[2:]
+mac_bin_c = bin(int((mac_list[2]), 16))[2:]
+
+print(mac_bin_a + mac_bin_b + mac_bin_c)
